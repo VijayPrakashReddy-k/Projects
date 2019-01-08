@@ -1,4 +1,6 @@
 # Capstone_Project
 Working on Diabetic Dataset.
-Hospital collects data about diabetic patients that are undergoing different procedures in the hospitals and
-who have got readmitted either before 30 days or greater than 30 days.
+The hospitals are evaluating efficiency of Insulin based treatment for patients
+Recommend if solo insulin treatments work well towards the above stated objective
+Should were commend solo insulin or does it work better in conjunction with other
+drugs/ treatement ?
