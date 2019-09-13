@@ -1,0 +1,1092 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20183.18.1128.2033                               -->
+<workbook source-build='2018.3.1 (20183.18.1128.2033)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='TOP N' datatype='integer' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='10'>
+        <calculation class='tableau' formula='10' />
+        <range max='100' min='1' />
+      </column>
+    </datasource>
+    <datasource caption='report (3 Dish Data - assignment 03-05-2019)' inline='true' name='federated.140bgnv0blwdq111i4nt10q11xua' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='3 Dish Data - assignment 03-05-2019' name='excel-direct.1qul3y3006dbif19px0681jydex1'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='Data/Spoon Shot/3 Dish Data - assignment 03-05-2019.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1qul3y3006dbif19px0681jydex1' name='report' table='[report$]' type='table'>
+          <columns gridOrigin='A1:E10001:no:A1:E10001:0' header='yes' outcome='6'>
+            <column datatype='string' name='Dish Name' ordinal='0' />
+            <column datatype='string' name='Cooking Method' ordinal='1' />
+            <column datatype='string' name='Type of Dish' ordinal='2' />
+            <column datatype='string' name='Cuisine' ordinal='3' />
+            <column datatype='string' name='Nature' ordinal='4' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Dish Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Dish Name]</local-name>
+            <parent-name>[report]</parent-name>
+            <remote-alias>Dish Name</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cooking Method</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Cooking Method]</local-name>
+            <parent-name>[report]</parent-name>
+            <remote-alias>Cooking Method</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Type of Dish</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Type of Dish]</local-name>
+            <parent-name>[report]</parent-name>
+            <remote-alias>Type of Dish</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cuisine</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Cuisine]</local-name>
+            <parent-name>[report]</parent-name>
+            <remote-alias>Cuisine</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Nature</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Nature]</local-name>
+            <parent-name>[report]</parent-name>
+            <remote-alias>Nature</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[report]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:E10001:no:A1:E10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <column datatype='string' name='[Cuisine]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Nature]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column-instance column='[Cuisine]' derivation='None' name='[none:Cuisine:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Nature]' derivation='None' name='[none:Nature:nk]' pivot='key' type='nominal' />
+      <group caption='Action (Cuisine)' hidden='true' name='[Action (Cuisine)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Cuisine]' />
+        </groupfilter>
+      </group>
+      <layout dim-ordering='alphabetic' dim-percentage='0.523364' group-percentage='0.0537383' measure-ordering='alphabetic' measure-percentage='0.369159' parameter-percentage='0.0537383' show-aliased-fields='true' show-hidden-fields='true' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Cuisine:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Cuisine 109&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Cuisine 130&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Cuisine 150&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Cuisine 29&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Cuisine 49&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Cuisine 69&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Cuisine 89&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Cuisine 9&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Cuisine 1&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Cuisine 101&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Cuisine 122&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Cuisine 142&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Cuisine 162&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Cuisine 21&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Cuisine 41&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Cuisine 61&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Cuisine 81&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Cuisine 105&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Cuisine 126&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Cuisine 146&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Cuisine 166&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Cuisine 25&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Cuisine 45&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Cuisine 5&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Cuisine 65&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Cuisine 85&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Cuisine 113&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Cuisine 13&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Cuisine 134&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Cuisine 154&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Cuisine 33&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Cuisine 53&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Cuisine 73&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Cuisine 93&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Cuisine 10&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Cuisine 110&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Cuisine 131&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Cuisine 151&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Cuisine 30&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Cuisine 50&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Cuisine 70&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Cuisine 90&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Cuisine 106&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Cuisine 127&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Cuisine 147&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Cuisine 167&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Cuisine 26&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Cuisine 46&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Cuisine 6&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Cuisine 66&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Cuisine 86&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Cuisine 120&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Cuisine 140&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Cuisine 160&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Cuisine 19&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Cuisine 39&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Cuisine 59&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Cuisine 79&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Cuisine 99&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Cuisine 102&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Cuisine 123&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Cuisine 143&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Cuisine 163&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Cuisine 2&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Cuisine 22&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Cuisine 42&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Cuisine 62&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Cuisine 82&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Cuisine 118&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Cuisine 138&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Cuisine 158&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Cuisine 17&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Cuisine 37&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Cuisine 57&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Cuisine 77&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Cuisine 97&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Cuisine 107&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Cuisine 128&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Cuisine 148&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Cuisine 27&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Cuisine 47&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Cuisine 67&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Cuisine 7&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Cuisine 87&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;NONE&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Cuisine 114&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Cuisine 135&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Cuisine 14&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Cuisine 155&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Cuisine 34&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Cuisine 54&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Cuisine 74&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Cuisine 94&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Cuisine 116&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Cuisine 136&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Cuisine 15&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Cuisine 156&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Cuisine 35&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Cuisine 55&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Cuisine 75&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Cuisine 95&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Cuisine 119&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Cuisine 139&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Cuisine 159&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Cuisine 18&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Cuisine 38&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Cuisine 58&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Cuisine 78&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Cuisine 98&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Cuisine 100&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Cuisine 121&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Cuisine 141&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Cuisine 161&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Cuisine 20&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Cuisine 40&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Cuisine 60&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Cuisine 80&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Cuisine 11&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Cuisine 111&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Cuisine 132&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Cuisine 152&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Cuisine 31&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Cuisine 51&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Cuisine 71&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Cuisine 91&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Cuisine 108&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Cuisine 129&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Cuisine 149&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Cuisine 28&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Cuisine 48&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Cuisine 68&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Cuisine 8&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Cuisine 88&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Cuisine 103&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Cuisine 124&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Cuisine 144&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Cuisine 164&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Cuisine 23&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Cuisine 3&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Cuisine 43&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Cuisine 63&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Cuisine 83&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Cuisine 117&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Cuisine 137&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Cuisine 157&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Cuisine 16&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Cuisine 36&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Cuisine 56&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Cuisine 76&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Cuisine 96&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Cuisine 112&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Cuisine 12&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Cuisine 133&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Cuisine 153&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Cuisine 32&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Cuisine 52&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Cuisine 72&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Cuisine 92&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Cuisine 104&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Cuisine 125&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Cuisine 145&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Cuisine 165&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Cuisine 24&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Cuisine 4&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Cuisine 44&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Cuisine 64&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Cuisine 84&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Nature:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Egg&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Vegan&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Veg&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Non Veg&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Sheet 2' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated)' name='[Action2]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Cuisine - Dish types' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Cuisine - Dish types'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'> How many cuisines have the least diversity in Dish types?</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='report (3 Dish Data - assignment 03-05-2019)' name='federated.140bgnv0blwdq111i4nt10q11xua' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='TOP N' datatype='integer' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='10'>
+              <calculation class='tableau' formula='10' />
+              <range max='100' min='1' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.140bgnv0blwdq111i4nt10q11xua'>
+            <column datatype='string' name='[Cuisine]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Type of Dish]' role='dimension' type='nominal' />
+            <column-instance column='[Type of Dish]' derivation='CountD' name='[ctd:Type of Dish:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Cuisine]' derivation='None' name='[none:Cuisine:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.140bgnv0blwdq111i4nt10q11xua].[none:Cuisine:nk]'>
+            <groupfilter count='[Parameters].[Parameter 1]' end='bottom' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNTD([Type of Dish])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Cuisine:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.140bgnv0blwdq111i4nt10q11xua].[none:Cuisine:nk]' direction='ASC' using='[federated.140bgnv0blwdq111i4nt10q11xua].[ctd:Type of Dish:qk]' />
+          <slices>
+            <column>[federated.140bgnv0blwdq111i4nt10q11xua].[none:Cuisine:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.140bgnv0blwdq111i4nt10q11xua].[none:Cuisine:nk]</rows>
+        <cols>[federated.140bgnv0blwdq111i4nt10q11xua].[ctd:Type of Dish:qk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='report (3 Dish Data - assignment 03-05-2019)' name='federated.140bgnv0blwdq111i4nt10q11xua' />
+          </datasources>
+          <datasource-dependencies datasource='federated.140bgnv0blwdq111i4nt10q11xua'>
+            <column datatype='string' name='[Cuisine]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Nature]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Type of Dish]' role='dimension' type='nominal' />
+            <column-instance column='[Type of Dish]' derivation='CountD' name='[ctd:Type of Dish:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Cuisine]' derivation='None' name='[none:Cuisine:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Nature]' derivation='None' name='[none:Nature:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.140bgnv0blwdq111i4nt10q11xua].[Action (Cuisine)]'>
+            <groupfilter function='level-members' level='[Cuisine]' user:ui-action-filter='[Action2]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <computed-sort column='[federated.140bgnv0blwdq111i4nt10q11xua].[none:Cuisine:nk]' direction='DESC' using='[federated.140bgnv0blwdq111i4nt10q11xua].[ctd:Type of Dish:qk]' />
+          <slices>
+            <column>[federated.140bgnv0blwdq111i4nt10q11xua].[Action (Cuisine)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.140bgnv0blwdq111i4nt10q11xua].[none:Nature:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.140bgnv0blwdq111i4nt10q11xua].[ctd:Type of Dish:qk]</rows>
+        <cols>[federated.140bgnv0blwdq111i4nt10q11xua].[none:Cuisine:nk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='report (3 Dish Data - assignment 03-05-2019)' name='federated.140bgnv0blwdq111i4nt10q11xua' />
+          </datasources>
+          <datasource-dependencies datasource='federated.140bgnv0blwdq111i4nt10q11xua'>
+            <column datatype='string' name='[Cuisine]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Dish Name]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Nature]' role='dimension' type='nominal' />
+            <column-instance column='[Cuisine]' derivation='None' name='[none:Cuisine:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Dish Name]' derivation='None' name='[none:Dish Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Nature]' derivation='None' name='[none:Nature:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>([federated.140bgnv0blwdq111i4nt10q11xua].[none:Nature:nk] / ([federated.140bgnv0blwdq111i4nt10q11xua].[none:Dish Name:nk] / [federated.140bgnv0blwdq111i4nt10q11xua].[none:Cuisine:nk]))</rows>
+        <cols />
+      </table>
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='report (3 Dish Data - assignment 03-05-2019)' name='federated.140bgnv0blwdq111i4nt10q11xua' />
+          </datasources>
+          <datasource-dependencies datasource='federated.140bgnv0blwdq111i4nt10q11xua'>
+            <column datatype='string' name='[Nature]' role='dimension' type='nominal' />
+            <column-instance column='[Nature]' derivation='None' name='[none:Nature:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.140bgnv0blwdq111i4nt10q11xua].[none:Nature:nk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <datasources>
+        <datasource name='Parameters' />
+      </datasources>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='TOP N' datatype='integer' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='10'>
+          <calculation class='tableau' formula='10' />
+          <range max='100' min='1' />
+        </column>
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='5' param='horz' type='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='3' type='layout-basic' w='86100' x='800' y='1000'>
+              <zone h='49000' id='1' name='Cuisine - Dish types' w='86100' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49000' id='7' name='Sheet 2' w='86100' x='800' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='123' h='98000' id='4' is-fixed='true' param='vert' type='layout-flow' w='12300' x='86900' y='1000'>
+              <zone h='6500' id='6' mode='type_in' param='[Parameters].[Parameter 1]' type='paramctrl' w='12300' x='86900' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='13250' id='8' name='Sheet 2' pane-specification-id='0' param='[federated.140bgnv0blwdq111i4nt10q11xua].[none:Nature:nk]' type='color' w='12300' x='86900' y='7500'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+    </dashboard>
+    <dashboard name='Story 1' type='storyboard'>
+      <style />
+      <size maxheight='964' maxwidth='1016' minheight='964' minwidth='1016' />
+      <zones>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98340' id='1' param='vert' removable='false' type='layout-flow' w='98426' x='787' y='830'>
+            <zone h='3423' id='3' type='title' w='98426' x='787' y='830' />
+            <zone h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' type='flipboard-nav' w='98426' x='787' y='4253' />
+            <zone h='84440' id='5' paired-zone-id='4' removable='false' type='flipboard' w='98426' x='787' y='14730'>
+              <flipboard active-id='1' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point caption='Cuisines and Dish types' captured-sheet='Dashboard 1' id='1' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone flipboard-zone-id='5' h='7469' id='6' story-point-id='1' type='text' w='98327' x='1181' y='49170'>
+          <formatted-text>
+            <run>There are 4 Cusines have the least diversity in Dish types with only 1 distinct type of Dish</run>
+          </formatted-text>
+        </zone>
+        <zone flipboard-zone-id='5' h='3112' id='7' story-point-id='1' type='text' w='31594' x='18307' y='92635'>
+          <formatted-text>
+            <run>Above plot shows the Proportion of </run>
+          </formatted-text>
+        </zone>
+      </zones>
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Cuisine - Dish types'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='type_in' param='[Parameters].[Parameter 1]' type='parameter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{17F5F6AD-53D3-49F3-BB4A-247A269EAF66}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.140bgnv0blwdq111i4nt10q11xua].[none:Nature:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{95AE732F-4102-4A69-A48B-0151460BAD31}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0D1599FC-EF08-4D76-AD2F-065A57A00018}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='189'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{EFB86F7A-E39B-4F68-81F3-0C3F06334BEF}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Cuisine - Dish types' />
+        <viewpoint name='Sheet 2'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{B40E36F0-5F3B-42FD-8386-CEE96751C3AB}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Story 1'>
+      <viewpoints />
+      <active id='7' />
+      <simple-id uuid='{22B5D00F-A8DC-42AB-B63C-0D871A83EC62}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E30AF598-709A-468E-B835-8F5BC0767A58}' />
+    </window>
+  </windows>
+</workbook>
